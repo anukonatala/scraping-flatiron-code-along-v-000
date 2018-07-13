@@ -15,6 +15,7 @@ class Scraper
       end
     end
   end
+<<<<<<< HEAD
 
   def make_courses
     self.get_courses.each do |post|
@@ -34,6 +35,21 @@ class Scraper
   end
   def get_courses
     self.get_page.css(".post")
+=======
+
+  def make_courses
+
+  end
+
+  def get_page
+   html = open('http://learn-co-curriculum.github.io/site-for-scraping/courses')
+   Nokogiri::HTML(html)
+   doc = Nokogiri::HTML(html)
+
+  end
+  def get_courses
+
+>>>>>>> a679c673b6914358b2436affd3d3c5b103e055a8
   end
 	
   
